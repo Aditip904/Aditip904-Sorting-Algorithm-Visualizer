@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Container Styling */
+  .container {
+    text-align: center;
+    width: 80%;
+  }
+  
+  /* Controls Layout */
+  .controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+  
+  /* Control Item Styling */
+  .control-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* Slider Styling */
+  input[type="range"] {
+    width: 200px;
+    cursor: pointer;
+    height: 4px;
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+    background: #6a00f4;
+    border-radius: 50%;
+  }
+  
+  /* Dropdown Styling */
+  select {
+    padding: 5px;
+    background-color: #6a00f4;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Button Styling */
+  .button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff4a41;
+  }
+  
+  .button:active {
+    background-color: #ff4a61;
+  }
+  
+  /* Array Container Styling */
+  .array-container {
+    display: flex;
+    align-items: flex-end;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Bar Styling */
+  .bar {
+    background-color: #bb86fc;
+    margin: 0 2px;
+    border-radius: 5px;
+    transition: height 0.2s;
+  }
+  
+  .bar.active {
+    background-color: red;
+  }
+  
+  .bar.sorted {
+    background-color: green;
+  }
+  
